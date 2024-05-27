@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Light</title>
+  </head>
+ 
+  <body onload="main()">
+
+    <div style="position: relative; left: 000px;" > 
+    <canvas id="webgl" width="1000" height="1000">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot">XXX<p>
+
+    <div>
+
+   <div style="position: relative; left: 1200px; top:-600px" > 
+    <p>
+    Animation:
+    <button type="button" id="Animation_ON">ON</button>
+    <button type="button" id="Animation_OFF">OFF</button>
+    <p>
+    Normal:
+    <button type="button" id="Normal_ON">ON</button>
+    <button type="button" id="Normal_OFF">OFF</button>
+    <p>
+    Light:
+    <button type="button" id="light_ON">ON</button>
+    <button type="button" id="light_OFF">OFF</button>
+    <p>
+         
+    light X<input type="range" min="-10" max="10" value="0" class="slider" id="light_x">
+    <p>
+    light Y<input type="range" min="-10" max="10" value="0" class="slider" id="light_y">
+    <p>
+    light Z<input type="range" min="-10" max="10" value="0" class="slider" id="light_z">
+    <p>
+    Light Color:
+    <p>  
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+    <p>
+    Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+    <p>
+    Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide">
+
+    </div>
+
+   
+
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="camera.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="lighting.js"></script>
+  </body>
+</html>
